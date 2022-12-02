@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_notifications"> <!-- Change start tab -->
+
+    <keep_state_fragment
+        android:id="@+id/navigation_home"
+        android:name="com.logicalwe.custom_navigator_in_nav_compo.HomeContainerFragment"
+        android:label="HomeContainerFragment" />
+    <keep_state_fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.logicalwe.custom_navigator_in_nav_compo.DashboardFragment"
+        android:label="DashboardFragment" />
+    <keep_state_fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.logicalwe.custom_navigator_in_nav_compo.NotificationsFragment"
+        android:label="NotificationsFragment" />
+</navigation>
